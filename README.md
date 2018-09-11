@@ -36,7 +36,7 @@ UCI_HAR_Dataset/train/y_train.txt and UCI_HAR_Dataset/train/subject_train.txt)
 6. The test and train datasets are joined together to create a master data set.
 7. Some of the variable labels are modified to make the names easier to read.
 8. The master data set is then summarized (averaged) by subject and activity to create the tidy data set.
-9. The tidy data set is then written to a csv file (Course3Project/tidydataset.csv)
+9. The tidy data set is then written to a txt file with `row.name = FALSE` (Course3Project/tidydataset.txt)
 
 ### Dataset Acknowledgment
 

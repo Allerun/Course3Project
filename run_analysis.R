@@ -55,5 +55,5 @@ names(masterdataset) <- gsub("^f", "fft", names(masterdataset))
 ### Create the summarized tidy dataset group by subject and activity.
 tidydataset <- masterdataset %>% group_by_at(vars(subject, activity)) %>% summarize_all(funs(mean))
 
-### Write the tidy dataset to a csv called tidydataset.csv.
-write.csv(tidydataset, "./Course3Project/tidydataset.csv")
+### Write the tidy dataset to a txt file called tidydataset.txt.
+write.table(tidydataset, "./Course3Project/tidydataset.txt", row.name = FALSE)
