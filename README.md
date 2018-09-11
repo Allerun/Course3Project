@@ -1,7 +1,7 @@
 ### Introduction
 
 The purpose of this script is to take the training and testing datasets from the following location:
-[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+[Human Activity Recognition Using Smartphones Dataset Version 1.0](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 and combine them into one master data set.  From there we can create a summary data set that
 calculates the means of each variable by the subject and activity group.  
 
