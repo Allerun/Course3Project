@@ -1,0 +1,101 @@
+Peer-graded Assignment: Getting and Cleaning Data Course Project 
+Code Book
+===============================================================================
+
+The features selected for this database come from the accelerometer and 
+gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals 
+(prefix 'time' to denote time) were captured at a constant rate of 50 Hz. Then they 
+were filtered using a median filter and a 3rd order low pass Butterworth filter 
+with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration 
+signal was then separated into body and gravity acceleration signals 
+(tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with
+a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in
+time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the 
+magnitude of these three-dimensional signals were calculated using the Euclidean 
+norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, 
+tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals 
+producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, 
+fBodyGyroMag, fBodyGyroJerkMag. (Note the 'fft' to indicate frequency domain 
+signals). 
+
+In the script run_analysis.R, the masterdataset and the summary file 
+tidydataset.csv contains the following fields (averaged for tinydataset.csv):
+
+subject - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.                  
+activity - Activity name for each activity performed.  
+
+Time Domain Signals 
+===========================              
+timebodyaccmeanx           
+timebodyaccmeany          
+timebodyaccmeanz           
+timebodyaccstdx            
+timebodyaccstdy            
+timebodyaccstdz           
+timegravityaccmeanx        
+timegravityaccmeany        
+timegravityaccmeanz        
+timegravityaccstdx        
+timegravityaccstdy         
+timegravityaccstdz         
+timebodyaccjerkmeanx       
+timebodyaccjerkmeany      
+timebodyaccjerkmeanz       
+timebodyaccjerkstdx        
+timebodyaccjerkstdy        
+timebodyaccjerkstdz       
+timebodygyromeanx          
+timebodygyromeany          
+timebodygyromeanz          
+timebodygyrostdx          
+timebodygyrostdy           
+timebodygyrostdz           
+timebodygyrojerkmeanx      
+timebodygyrojerkmeany     
+timebodygyrojerkmeanz      
+timebodygyrojerkstdx       
+timebodygyrojerkstdy       
+timebodygyrojerkstdz      
+timebodyaccmagmean         
+timebodyaccmagstd          
+timegravityaccmagmean      
+timegravityaccmagstd      
+timebodyaccjerkmagmean     
+timebodyaccjerkmagstd      
+timebodygyromagmean        
+timebodygyromagstd        
+timebodygyrojerkmagmean    
+timebodygyrojerkmagstd 
+
+Fast Fourier Transforms
+===========================    
+fftbodyaccmeanx            
+fftbodyaccmeany           
+fftbodyaccmeanz            
+fftbodyaccstdx             
+fftbodyaccstdy             
+fftbodyaccstdz            
+fftbodyaccjerkmeanx        
+fftbodyaccjerkmeany        
+fftbodyaccjerkmeanz        
+fftbodyaccjerkstdx        
+fftbodyaccjerkstdy         
+fftbodyaccjerkstdz         
+fftbodygyromeanx           
+fftbodygyromeany          
+fftbodygyromeanz           
+fftbodygyrostdx            
+fftbodygyrostdy            
+fftbodygyrostdz           
+fftbodyaccmagmean          
+fftbodyaccmagstd           
+fftbodybodyaccjerkmagmean  
+fftbodybodyaccjerkmagstd  
+fftbodybodygyromagmean     
+fftbodybodygyromagstd      
+fftbodybodygyrojerkmagmean 
+fftbodybodygyrojerkmagstd
