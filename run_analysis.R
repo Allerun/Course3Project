@@ -56,4 +56,7 @@ names(masterdataset) <- gsub("^f", "fft", names(masterdataset))
 tidydataset <- masterdataset %>% group_by_at(vars(subject, activity)) %>% summarize_all(funs(mean))
 
 ### Write the tidy dataset to a txt file called tidydataset.txt.
+if (!dir.exists("./Course3Project")) {
+dir.create("./Course3Project")
+}
 write.table(tidydataset, "./Course3Project/tidydataset.txt", row.name = FALSE)
